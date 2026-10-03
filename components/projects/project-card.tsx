@@ -56,7 +56,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.github_frontend}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium transition-opacity hover:opacity-70"
+            className="text-sm font-medium transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             Frontend
           </Link>
@@ -67,7 +67,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.github_backend}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium transition-opacity hover:opacity-70"
+            className="text-sm font-medium transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             Backend
           </Link>
@@ -78,7 +78,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-auto inline-flex items-center gap-1.5 text-sm font-medium transition-opacity hover:opacity-70"
+            className="ml-auto inline-flex items-center gap-1.5 text-sm font-medium transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             Live
             <ArrowUpRight className="size-4" />

@@ -27,7 +27,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               {item.label}
             </Link>
@@ -39,7 +39,7 @@ export function Navbar() {
           href="https://github.com/parthsingh23"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden text-sm font-medium transition-colors hover:text-muted-foreground md:block"
+          className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         >
           GitHub
         </Link>
@@ -49,7 +49,7 @@ export function Navbar() {
           <Sheet>
             <SheetTrigger
               aria-label="Open navigation menu"
-              className="inline-flex size-9 items-center justify-center rounded-md border border-border"
+              className="inline-flex size-9 items-center justify-center rounded-md border border-border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               <Menu className="size-4" />
             </SheetTrigger>
@@ -60,7 +60,7 @@ export function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-base font-medium"
+                    className="text-base font-medium transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
                     {item.label}
                   </Link>
@@ -70,7 +70,7 @@ export function Navbar() {
                   href="https://github.com/parthsingh23"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-medium"
+                  className="text-base font-medium transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
                   GitHub ↗
                 </Link>

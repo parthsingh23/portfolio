@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navigation = [
   { label: "Work", href: "#work" },
@@ -17,6 +21,7 @@ export function Navbar() {
           Parth Singh
         </Link>
 
+        {/* Desktop navigation */}
         <nav className="hidden items-center gap-6 md:flex">
           {navigation.map((item) => (
             <Link
@@ -29,14 +34,50 @@ export function Navbar() {
           ))}
         </nav>
 
+        {/* Desktop GitHub */}
         <Link
           href="https://github.com/parthsingh23"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm font-medium transition-colors hover:text-muted-foreground"
+          className="hidden text-sm font-medium transition-colors hover:text-muted-foreground md:block"
         >
           GitHub
         </Link>
+
+        {/* Mobile navigation */}
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger
+              aria-label="Open navigation menu"
+              className="inline-flex size-9 items-center justify-center rounded-md border border-border"
+            >
+              <Menu className="size-4" />
+            </SheetTrigger>
+
+            <SheetContent side="right">
+              <nav className="mt-8 flex flex-col gap-6">
+                {navigation.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-lg font-medium"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+
+                <Link
+                  href="https://github.com/parthsingh23"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-medium"
+                >
+                  GitHub ↗
+                </Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );

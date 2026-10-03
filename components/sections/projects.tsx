@@ -5,7 +5,10 @@ export function Projects() {
   const featuredProjects = projects.filter((project) => project.featured);
 
   return (
-    <section id="work" className="scroll-mt-24 py-24 md:py-32">
+    <section
+      id="work"
+      className="scroll-mt-24 pt-4 pb-6 md:pt-4 md:pb-8"
+    >
       <div className="mb-12">
         <p className="text-sm font-medium text-muted-foreground">
           Selected work

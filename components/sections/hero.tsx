@@ -11,7 +11,7 @@ const technologies = [
 
 export function Hero() {
   return (
-    <section className="flex min-h-[calc(100vh-4rem)] items-center py-16 md:py-24">
+    <section className="flex min-h-[80vh] items-center py-16 md:py-24">
       <div className="w-full">
         <p className="mb-5 text-sm font-medium text-muted-foreground">
           Computer Science · Data Science

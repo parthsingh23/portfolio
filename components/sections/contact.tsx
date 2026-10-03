@@ -2,7 +2,10 @@ import Link from "next/link";
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-24 py-24 md:py-32">
+    <section
+      id="contact"
+      className="scroll-mt-24 border-b border-border py-16 md:py-20"
+    >
       <div className="grid gap-12 md:grid-cols-2">
         <div>
           <p className="text-sm font-medium text-muted-foreground">Contact</p>

@@ -20,10 +20,10 @@ export function Contact() {
 
           <div className="mt-8 flex flex-col gap-4">
             <Link
-              href="mailto:YOUR_EMAIL"
+              href="mailto:parthsingh1866@gmail.com"
               className="text-sm font-medium hover:opacity-70"
             >
-              parthsingh1866@gmail.com
+              Mail ↗
             </Link>
 
             <Link
@@ -41,7 +41,7 @@ export function Contact() {
               rel="noopener noreferrer"
               className="text-sm font-medium hover:opacity-70"
             >
-              Linkedin ↗
+              LinkedIn ↗
             </Link>
           </div>
         </div>

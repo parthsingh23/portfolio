@@ -55,12 +55,12 @@ export function Navbar() {
             </SheetTrigger>
 
             <SheetContent side="right">
-              <nav className="mt-8 flex flex-col gap-6">
+              <nav className="mt-6 flex flex-col gap-2 px-6">
                 {navigation.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-lg font-medium"
+                    className="text-base font-medium"
                   >
                     {item.label}
                   </Link>
@@ -70,7 +70,7 @@ export function Navbar() {
                   href="https://github.com/parthsingh23"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg font-medium"
+                  className="text-base font-medium"
                 >
                   GitHub ↗
                 </Link>

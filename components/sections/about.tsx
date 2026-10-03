@@ -15,7 +15,7 @@ export function About() {
         <div className="space-y-6 text-muted-foreground">
           <p>
             I&apos;m a Computer Science student focused on software engineering,
-            backend systems, databases, machine leanring and data science.
+            backend systems, databases, machine learning and data science.
           </p>
 
           <p>
@@ -32,7 +32,7 @@ export function About() {
           </p>
         </div>
       </div>
-      <div className="mt-20 border-t border-border pt-12">
+      <div className="mt-16 border-t border-border pt-12 md:mt-20">
         <p className="text-sm font-medium text-muted-foreground">Skills</p>
 
         <div className="mt-8 grid gap-10 md:grid-cols-2">

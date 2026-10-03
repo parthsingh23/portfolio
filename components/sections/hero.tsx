@@ -11,17 +11,17 @@ const technologies = [
 
 export function Hero() {
   return (
-    <section className="flex min-h-[calc(100vh-4rem)] items-center">
-      <div className="w-full py-24">
+    <section className="flex min-h-[calc(100vh-4rem)] items-center py-16 md:py-24">
+      <div className="w-full">
         <p className="mb-5 text-sm font-medium text-muted-foreground">
           Computer Science · Data Science
         </p>
 
-        <h1 className="max-w-4xl font-heading text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+        <h1 className="max-w-4xl font-heading text-5xl font-semibold leading-tight tracking-tight sm:text-6xl md:text-7xl">
           Building software, data systems, and useful things.
         </h1>
 
-        <p className="mt-8 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">
+        <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground md:mt-8 md:text-xl">
           I&apos;m Parth Singh, a Computer Science student focused on software
           engineering, data science, and backend systems.
         </p>
@@ -44,7 +44,7 @@ export function Hero() {
           </Link>
         </div>
 
-        <div className="mt-16 flex flex-wrap gap-x-6 gap-y-3 border-t border-border pt-6">
+        <div className="mt-12 flex flex-wrap gap-x-6 gap-y-3 border-t border-border pt-6 md:mt-16">
           {technologies.map((technology) => (
             <span key={technology} className="text-sm text-muted-foreground">
               {technology}

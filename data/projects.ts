@@ -27,7 +27,7 @@ export const projects: Project[] = [
     status: "Live",
     github_frontend: "https://github.com/parthsingh23/SalesDashboard",
     github_backend: "https://github.com/parthsingh23/SalesAnalyticsAPI",
-    live: "https://salesdashboard.vercel.app",
+    live: "https://sales-dashboard-ebon-one.vercel.app/",
     featured: true,
   },
 ];

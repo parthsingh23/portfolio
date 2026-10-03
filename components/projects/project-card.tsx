@@ -8,7 +8,11 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="group flex h-full flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:bg-muted/40">
+    <article
+      className={`group flex h-full flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:bg-muted/40 ${
+        project.featured ? "md:col-span-2" : ""
+      }`}
+    >
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-sm text-muted-foreground">{project.category}</p>
@@ -26,6 +30,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <p className="mt-5 text-sm leading-6 text-muted-foreground">
         {project.description}
       </p>
+      <div className="mt-6 space-y-3">
+        {project.highlights.map((highlight) => (
+          <div key={highlight} className="flex gap-3 text-sm leading-6">
+            <span className="mt-2 size-1.5 shrink-0 rounded-full bg-foreground" />
+            <p className="text-muted-foreground">{highlight}</p>
+          </div>
+        ))}
+      </div>
 
       <div className="mt-6 flex flex-wrap gap-2">
         {project.technologies.map((technology) => (

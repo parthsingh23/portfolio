@@ -2,6 +2,7 @@ export type Project = {
   title: string;
   description: string;
   technologies: string[];
+  highlights: string[];
   category: string;
   status: "Live" | "In Development";
   github_frontend?: string;
@@ -22,6 +23,12 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Supabase",
       "Recharts",
+    ],
+    highlights: [
+      "Interactive sales KPIs, revenue trends, regional and category breakdowns, and top-product analysis.",
+      "Daily, weekly, and monthly revenue trend analysis with date-range filtering.",
+      "FastAPI and SQLModel backend with analytics endpoints, SQL aggregations, validation, and CRUD operations.",
+      "JWT authentication with protected endpoints and admin/viewer role-based access.",
     ],
     category: "Full Stack",
     status: "Live",

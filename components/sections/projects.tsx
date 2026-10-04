@@ -10,16 +10,12 @@ export function Projects() {
       className="scroll-mt-24 pt-4 pb-6 md:pt-4 md:pb-8"
     >
       <div className="mb-12">
-        <p className="text-sm font-medium text-muted-foreground">
-          Selected work
-        </p>
-
-        <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+        <h2 className="mt-1 text-3xl font-semibold tracking-tight md:text-4xl">
           Projects
         </h2>
 
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          A selection of software, backend, and data projects I&apos;ve built
+          A selection of software, backend and data projects I&apos;ve built
           while learning and experimenting with different technologies.
         </p>
       </div>

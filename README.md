@@ -37,7 +37,7 @@ https://parth-sh.vercel.app/
 
 ### Sales Analytics Platform
 
-A full-stack analytics platform for exploring sales performance through KPIs, revenue trends, product rankings, regional breakdowns, and category analysis.
+A full-stack analytics platform for exploring sales performance through KPIs, revenue trends, product rankings, regional breakdowns and category analysis.
 
 **Frontend:**  
 https://github.com/parthsingh23/SalesDashboard

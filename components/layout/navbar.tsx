@@ -1,15 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ThemeToggle } from "@/components/layout/theme-toggle";
-
-const navigation = [
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
-];
 
 export function Navbar() {
   return (
@@ -21,70 +10,6 @@ export function Navbar() {
         >
           Parth Singh
         </Link>
-
-        {/* Desktop navigation */}
-        <nav className="hidden items-center gap-6 md:flex">
-          {navigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Desktop actions */}
-        <div className="hidden items-center gap-4 md:flex">
-          <ThemeToggle />
-
-          <Link
-            href="https://github.com/parthsingh23"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            GitHub
-          </Link>
-        </div>
-
-        {/* Mobile actions */}
-        <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
-
-          <Sheet>
-            <SheetTrigger
-              aria-label="Open navigation menu"
-              className="inline-flex size-9 items-center justify-center rounded-md border border-border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            >
-              <Menu className="size-4" />
-            </SheetTrigger>
-
-            <SheetContent side="right">
-              <nav className="mt-6 flex flex-col gap-2 px-6">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="text-base font-medium transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-
-                <Link
-                  href="https://github.com/parthsingh23"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base font-medium transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                >
-                  GitHub
-                </Link>
-              </nav>
-            </SheetContent>
-          </Sheet>
-        </div>
       </div>
     </header>
   );

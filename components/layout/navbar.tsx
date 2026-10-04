@@ -72,7 +72,7 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   className="text-base font-medium transition-colors hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
-                  GitHub ↗
+                  GitHub
                 </Link>
               </nav>
             </SheetContent>

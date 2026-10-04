@@ -19,11 +19,8 @@ https://parth-sh.vercel.app/
 ## Features
 
 - Responsive design
-- Light and dark theme
 - Project showcase
 - Skills overview
-- Contact section
-- Mobile navigation
 
 ## Sections
 
@@ -31,7 +28,6 @@ https://parth-sh.vercel.app/
 - Projects
 - About
 - Skills
-- Contact
 
 ## Featured Project
 
@@ -54,4 +50,5 @@ Clone the repository and install dependencies:
 
 ```bash
 npm install
+npm run dev
 ```

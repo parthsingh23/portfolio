@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 const navigation = [
   { label: "Work", href: "#work" },
@@ -34,18 +35,24 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Desktop GitHub */}
-        <Link
-          href="https://github.com/parthsingh23"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-        >
-          GitHub
-        </Link>
+        {/* Desktop actions */}
+        <div className="hidden items-center gap-4 md:flex">
+          <ThemeToggle />
 
-        {/* Mobile navigation */}
-        <div className="md:hidden">
+          <Link
+            href="https://github.com/parthsingh23"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          >
+            GitHub
+          </Link>
+        </div>
+
+        {/* Mobile actions */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+
           <Sheet>
             <SheetTrigger
               aria-label="Open navigation menu"
